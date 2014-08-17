@@ -1,5 +1,8 @@
 .welcome {
-	width: 640px;
+	width: 100%;
+	@include breakpoint(lap) {
+		width: 640px;
+	}
 	@include opacity(0);
 	@include transform3d(0, -20px, 0);
 	@include transition(all, 1.4s, ease);

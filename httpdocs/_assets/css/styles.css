@@ -113,13 +113,21 @@ h1 {
   color: #FFF;
   font-family: 'FuturaCondensed', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 62px;
-  font-size: 6.2rem; }
+  font-size: 32px;
+  font-size: 3.2rem; }
+  @media (min-width: 769px) {
+    h1 {
+      font-size: 62px;
+      font-size: 6.2rem; } }
 
 h2 {
   color: #FFF;
-  font-size: 20px;
-  font-size: 2rem; }
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media (min-width: 769px) {
+    h2 {
+      font-size: 20px;
+      font-size: 2rem; } }
 
 p, a, blockquote {
   color: #92959c;
@@ -211,7 +219,7 @@ span.small {
     .btn.header-btn.logo, .newsletter .header-btn.logo.email {
       background: url('../img/placeholders/logo.png') no-repeat;
       top: 20px;
-      left: 45px;
+      left: 20px;
       width: 60px;
       height: 20px;
       text-indent: -9999%; }
@@ -239,7 +247,10 @@ span.small {
             -webkit-perspective: 1000; } }
     .btn.header-btn.soon-btn, .newsletter .header-btn.soon-btn.email {
       top: 20px;
-      right: 45px; }
+      right: 20px; }
+      @media (min-width: 480px) {
+        .btn.header-btn.soon-btn {
+          right: 45px; } }
     .btn.header-btn.menu-btn, .newsletter .header-btn.menu-btn.email {
       padding-right: 26px;
       top: 20px;
@@ -411,11 +422,11 @@ span.small {
   height: auto;
   position: relative;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  min-height: 760px; }
   @media (min-width: 769px) {
     #header {
-      height: 100%;
-      min-height: 760px;
       position: fixed; } }
   #header.sign-up {
     height: auto;
@@ -777,7 +788,7 @@ span.small {
   z-index: 1; }
 
 .welcome {
-  width: 640px;
+  width: 100%;
   filter: alpha(opacity=0);
   opacity: 0;
   -webkit-transform: translate3d(0, -20px, 0);
@@ -790,6 +801,9 @@ span.small {
   -webkit-perspective: 1000;
   -webkit-transition: all 1.4s ease;
   transition: all 1.4s ease; }
+  @media (min-width: 769px) {
+    .welcome {
+      width: 640px; } }
 
 .owl-item.translated .welcome {
   -webkit-transform: translate3d(0, 0, 0);
@@ -850,8 +864,12 @@ span.small {
   right: auto;
   bottom: 50px;
   left: 50%;
-  width: 300px;
-  margin-left: -150px; }
+  width: 94%;
+  margin-left: -47%; }
+  @media (min-width: 769px) {
+    .newsletter {
+      width: 400px;
+      margin-left: -200px; } }
   .newsletter p {
     color: #FFF;
     text-align: center; }

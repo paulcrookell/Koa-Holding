@@ -79,12 +79,16 @@ $coloroverlay = false;
 
 	    <div class="newsletter">
 	    	<p>WANT TO HELP US TEST?<br/>SIGN UP TO OUR MAILING LIST TO TAKE PART</p>
-		    <form class="form js-form group" action="/welcome" method="post">
+		    <form class="form js-newsletter-signup group" action="inc/newsletter.php" method="post">
 		    	
-		    		<input type="email" class="input input-text email" placeholder="EMAIL ADDRESS" id="Email" name="Email" />
+		    		<input type="email" class="input input-text email" placeholder="EMAIL ADDRESS" id="email" name="email" />
 		    		<input type="submit" class="input btn subscribe-btn" value="Subscribe" name="submit" />
-		    	
+		    		
 		    </form>
+		    <div class="js-newsletter-confirm">
+		    	<br/>
+		    	<p>THANKS FOR SIGNING UP!</p>
+		   	</div>
 	    </div>
 
 	    <a href="/" class="btn header-btn logo">KOA</a>

@@ -40,7 +40,7 @@
 		&.logo {
 			background: url('../img/placeholders/logo.png') no-repeat;
 			top: $headerOffsetsVertical;
-			left: 45px;
+			left: $headerOffsetsVertical;
 			@include breakpoint(portable) {
 				left: 45px;
 			}
@@ -55,7 +55,11 @@
 		}
 		&.soon-btn {
 			top: $headerOffsetsVertical;
-			right: 45px;
+			
+			right: $headerOffsetsVertical;
+			@include breakpoint(portable) {
+				right: 45px;
+			}
 		}
 		&.menu-btn {
 			padding-right: 26px;

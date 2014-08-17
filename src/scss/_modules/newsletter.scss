@@ -1,7 +1,12 @@
 .newsletter {
 	@include position(absolute, auto, 50%, 50px, auto);
-	width: 300px;
-	margin-left: -150px;
+	width: 94%;
+	margin-left: -47%;
+	@include breakpoint(lap) {
+		width: 400px;
+		margin-left: -200px;
+
+	}
 	p {
 		color: $white;
 		text-align: center;

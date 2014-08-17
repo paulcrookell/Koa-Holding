@@ -20,7 +20,7 @@
 	    	this.$carousel.owlCarousel({
 	    		items: 1,
 	    		autoplay: true,
-	    		autoplayTimeout: 3000,
+	    		autoplayTimeout: 3500,
 	    		smartSpeed: 800,
 	    		loop: true,
 	    		nav: false,
