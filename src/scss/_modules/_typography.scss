@@ -1,0 +1,99 @@
+body {
+	font-family: "CenturyGothicStd", sans-serif;
+	color: $grey;
+	@include font-size(1.4);
+	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+	font-family: 'CenturyGothicStd';
+	src: url('../fonts/2B3906_0_0.eot');
+	src: url('../fonts/2B3906_0_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/2B3906_0_0.woff') format('woff'),
+		url('../fonts/2B3906_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FuturaCondensed';
+	src: url('../fonts/2BAC2B_0_0.eot');
+	src: url('../fonts/2BAC2B_0_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/2BAC2B_0_0.woff') format('woff'),
+		url('../fonts/2BAC2B_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'koaicon';
+	src:url('../fonts/koaicon.eot?lym943');
+	src:url('../fonts/koaicon.eot?#iefixlym943') format('embedded-opentype'),
+		url('../fonts/koaicon.woff?lym943') format('woff'),
+		url('../fonts/koaicon.ttf?lym943') format('truetype'),
+		url('../fonts/koaicon.svg?lym943#koaicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	color: #FFF;
+	font-family: 'FuturaCondensed', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	@include font-size(6.2);
+}
+
+h2 {
+	color: #FFF;
+	@include font-size(2);
+}
+
+p, a, blockquote {
+	color: $grey;
+	@include font-size(1.4);
+	text-align: left;
+}
+
+blockquote {
+	&:before {
+		content: "''";
+	}
+	&:after {
+		content: "''";
+	}
+}
+
+strong {
+	font-weight: bold;
+}
+
+span {
+	&.highlight {
+		color: $white;
+	}
+	&.small {
+		@include font-size(1.2);
+	}
+}
+
+
+
+[class^="koa-icon-"], [class*=" koa-icon-"] {
+	font-family: 'koaicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.koa-icon-facebook:before {
+	content: "\e600";
+}
+.koa-icon-instagram:before {
+	content: "\e601";
+}
+.koa-icon-twitter:before {
+	content: "\e602";
+}

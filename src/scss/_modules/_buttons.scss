@@ -1,0 +1,211 @@
+.btn {
+	background: transparent;
+	border: 4px solid $white;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "CenturyGothicStd", sans-serif;
+	@include font-size(1.4);
+	height: 45px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	@include transition(all, 200ms, ease);
+	
+	@include hoverActiveFocus() {
+		background: $white;
+		background: rgba(255,255,255,1);
+		color: #000;
+	}
+	
+	&.sign-up {
+		margin: 20px 0 0 0;
+		width: 250px;
+	}
+
+
+
+	&.header-btn {
+		border: none;
+		height: auto;
+		line-height: 18px;
+		color: #FFF;
+		display: block;
+		position: absolute;
+		@include transition(all, 300ms, ease);
+		@include hoverActiveFocus() {
+			color: $white;
+			background: transparent;
+		}
+		&.logo {
+			background: url('../img/placeholders/logo.png') no-repeat;
+			top: $headerOffsetsVertical;
+			left: 45px;
+			@include breakpoint(portable) {
+				left: 45px;
+			}
+			width: 60px; height: 20px;
+			text-indent: -9999%;
+			&.open {
+				@include transform3d(-260px, 0, 0);
+				@include breakpoint(lap) {
+					@include transform3d(0, 0, 0);
+				}
+			}
+		}
+		&.soon-btn {
+			top: $headerOffsetsVertical;
+			right: 45px;
+		}
+		&.menu-btn {
+			padding-right: 26px;
+			top: $headerOffsetsVertical;
+			right: $headerOffsetsHorizonatal;
+
+			.menu-icon {
+				//background: $white;
+				position: absolute;
+				width: 18px; height: 18px;
+				right:0; top: -1px;
+				span {
+					background: $white;
+					display: block;
+					width: 100%; height: 4px;
+					position: absolute;
+					&.top {
+						top:0;
+					}
+					&.middle-1, &.middle-2 {
+						top:7px;
+					}
+					&.bottom {
+						bottom:0;
+					}
+				}
+			}
+			@include breakpoint(portable) {
+				right: $headerOffsetsHorizonatal;
+			}
+			&.open {
+				@include transform3d(-260px, 0, 0);
+				.menu-icon {
+					span {
+						&.top {
+							@include transform3d(0, 7px, 0);
+							@include opacity(0);
+						}
+						&.middle-1 {
+							@include transform(rotate(45deg));
+						}
+						&.middle-2 {
+							@include transform(rotate(-45deg));
+						}
+						&.bottom {
+							@include transform3d(0, -7px, 0);
+							@include opacity(0);
+						}
+					}
+				}
+			}
+		}
+		&.more {
+			bottom: $headerOffsetsVertical;
+			left: $headerOffsetsHorizonatal;
+			.scroll-down-arrow {
+				@include rounded(50%);
+				border: 1px solid $white;
+				@include position(absolute, -4px, auto, auto, -30px);
+				width: 24px; height: 24px;
+				@include transition(all, 200ms, ease);
+				span {
+					@include position(absolute, 8px, 6px, auto, auto);
+					width: 0; 
+					height: 0; 
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-top: 7px solid $white;
+				}
+			}
+			@include hoverActiveFocus() {
+				//color: #F00;
+				.scroll-down-arrow {
+					background: $white;
+					span {
+						border-top: 7px solid $black;
+					}
+				}
+			}
+		}
+		&.join-challenge {
+			border-top: 1px solid $white;
+			bottom: $headerOffsetsVertical * 2;
+			left: 50%;
+			margin: 0 0 0 -150px;
+			text-align: center;
+			width: 300px;
+		}
+		&.bookmark-challenge {
+			background: transparent;
+			border-bottom: 1px solid $white;
+			bottom: $headerOffsetsVertical * 2 + 40;
+			left: 70%;
+			height: auto;
+			line-height: 18px;
+			padding: 0;
+			text-align: center;
+			width: 100px;
+			&:after {
+				content: "";
+				display: block;
+				background: url('../img/placeholders/bookmark-tab.png') no-repeat;
+				width: 14px; height: 41px;
+				@include position(absolute, auto, auto, -41px, -1px);
+			}
+		}
+		&.challenge-terms-link {
+			bottom: 5px;
+			@include font-size(1);
+			left: 50%;
+			margin: 0 0 0 -250px;
+			text-align: center;
+			width: 500px;
+		}
+		&.challenge-invite {
+			bottom: $headerOffsetsVertical;
+			right: $headerOffsetsHorizonatal;
+		}
+		
+	}
+
+	&.next {
+		display: none;
+		.next-arrow {
+			@include rounded(50%);
+			border: 1px solid $white;
+			@include position(absolute, -4px, auto, auto, -30px);
+			width: 24px; height: 24px;
+			@include transition(all, 200ms, ease);
+			span {
+				@include position(absolute, 6px, 8px, auto, auto);
+				width: 0; 
+				height: 0; 
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				border-left: 7px solid $white;
+
+			}
+		}
+		&.active {
+			display: inline-block;
+		}
+		@include hoverActiveFocus() {
+			//color: #F00;
+			.scroll-down-arrow {
+				background: $white;
+				span {
+					border-top: 7px solid $black;
+				}
+			}
+		}
+	}
+}

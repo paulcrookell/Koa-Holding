@@ -1,0 +1,22 @@
+.welcome {
+	width: 640px;
+	@include opacity(0);
+	@include transform3d(0, -20px, 0);
+	@include transition(all, 1.4s, ease);
+	.sign-up {
+		//@include transform3d(0, 45px, 0);
+		//@include transition(all, 0.2s, ease);
+	}
+}
+
+.owl-item {
+	&.translated {
+		.welcome {
+			@include transform3d(0, 0, 0);
+			@include opacity(1);
+			.sign-up {
+				//@include transform3d(0, 0px, 0);
+			}
+		}
+	}
+}

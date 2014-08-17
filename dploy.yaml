@@ -1,0 +1,11 @@
+dev:
+    scheme: ftp
+    host: 31.222.153.166
+    port: 21
+    user: switch-t
+    pass: 'haL6YH4x6EXk'
+    check: true
+    path:
+        local: httpdocs/
+        remote: httpdocs/
+    exclude: [".DS-Store","*/.sass-cache",".git","src"]

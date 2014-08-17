@@ -1,0 +1,44 @@
+.home {
+	height: 700px;
+	text-align: center;
+	.link {
+		&.view-challenge {
+			width: 250px;
+		}
+	}
+}
+
+.owl-dots {
+	@include position(absolute, auto, 50%, 20px, auto);
+	margin-left: -36px;
+	width: 72px;
+	.owl-dot {
+		background-color: #FFF;
+		float: left;
+		margin: 0 5px;
+		@include opacity(0.5);
+		@include rounded(50%);
+		text-align: center;
+		width: 8px; height: 8px;
+		&.active {
+			@include opacity(1);
+		}
+	}
+}
+
+.owl-nav {
+	> div {
+		position: absolute;
+		top: 50%;
+		margin-top: -65px;
+		width: 30px; height: 30px;
+		background-color: $white;
+		text-indent: -9999%;
+	}
+	.owl-prev {
+		left: 0;
+	}
+	.owl-next {
+		right: 0;
+	}
+}
