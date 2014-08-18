@@ -4559,7 +4559,8 @@ $.format = function deprecated() {
 	    initForm: function() {
 	    	$('.js-newsletter-confirm').hide();
 	    	$j(this.$form).validate({
-	    		submitHandler: this.onSubmit
+	    		submitHandler: this.onSubmit,
+	    		errorClass: 'newsletterError'
 	    	});
 	    },
 	    onSubmit: function(){
@@ -4617,7 +4618,7 @@ $.format = function deprecated() {
 	    		items: 1,
 	    		autoplay: true,
 	    		autoplayTimeout: 3500,
-	    		smartSpeed: 800,
+	    		smartSpeed: 1200,
 	    		loop: true,
 	    		nav: false,
 	    		onChanged: function(){

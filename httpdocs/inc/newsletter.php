@@ -39,7 +39,7 @@ if ( isset($_POST['submitted']) ) {
 		$MailChimp = new Drewm\MailChimp('946785f0e2946ad2bae19f2dfd181ed5-us3');
 
 		$result = $MailChimp->call('lists/subscribe', array(
-			'id'                => '42ad5889a6',
+			'id'                => 'c160b93c1e',
 			'email'             => array('email'=>$submittedEmail),
 		    'double_optin'      => false,
 		    'update_existing'   => true,

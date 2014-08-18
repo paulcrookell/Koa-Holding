@@ -3,8 +3,8 @@
 	width: 94%;
 	margin-left: -47%;
 	@include breakpoint(lap) {
-		width: 400px;
-		margin-left: -200px;
+		width: 500px;
+		margin-left: -250px;
 
 	}
 	p {
@@ -13,23 +13,47 @@
 	}
 	
 	.form {
-		margin: 20px 0 0 0;
+		margin: 30px 0 0 0;
 	}
 	
 	.email {
 		@extend .btn;
-		color: $black;
+		//border: none;
+		border-right: none;
+		color: #FFF;
 		cursor: text;
-		background-color: #FFF;
+		background-color: rgba(255,255,255,0);
 		float: left;
 		outline: none; 
 		text-align: left;
 		width: 65%;
+		padding-left: 10px;
+		@include hoverActiveFocus() {
+			background: none;
+			color: #FFF;
+		}
 	}
 	.subscribe-btn {
+		//border-color: rgba(255,255,255,0.8);
 		float: right;
 		line-height: 37px;
 		width: 35%;
+		&:hover {
+
+			//background: rgba(255,255,255,1);
+		}
 	}
+	label {
+		&.newsletterError {
+			position: absolute;
+			left: 0;
+			bottom: 46px;
+			color: #FFF;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	
+	
 }
 

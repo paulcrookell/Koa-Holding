@@ -16,6 +16,7 @@ $coloroverlay = false;
 
 	    <div class="slides owl-carousel js-welcome-carousel">
 	    	<div class="slide">
+
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-1.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
 	    		
 	    		<div class="landing-wrap valign">
@@ -26,8 +27,8 @@ $coloroverlay = false;
 	    		            <h2>YOUR ONLINE ADVENTURE PLATFORM</h2>
 	    		        </div>
 	    		    </div>
-	    		   	
 	    		</div>
+
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-2.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
@@ -37,7 +38,7 @@ $coloroverlay = false;
 	    		    <div class="mid">
 	    		        <div class="welcome">
 	    		           	<h1>SHARE YOUR ADVENTURE</h1>
-	    		            <h2>CAPTURE YOUR LIFE'S MOST ADVENTUROUS MOMENTS &amp; INSPIRE AN GLOBAL COMMUNITY</h2>
+	    		            <h2>CAPTURE YOUR LIFE'S MOST ADVENTUROUS MOMENTS &amp; INSPIRE A GLOBAL COMMUNITY</h2>
 	    		        </div>
 	    		    </div>
 	    		   	
@@ -76,7 +77,7 @@ $coloroverlay = false;
 
 	    <a href="carousel-arrows next"></a>
 
-
+	    <div class="grad-overlay"></div>
 	    <div class="newsletter">
 	    	<p>WANT TO HELP US TEST?<br/>SIGN UP TO OUR MAILING LIST TO TAKE PART</p>
 		    <form class="form js-newsletter-signup group" action="inc/newsletter.php" method="post">

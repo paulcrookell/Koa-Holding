@@ -15,7 +15,8 @@
 	    initForm: function() {
 	    	$('.js-newsletter-confirm').hide();
 	    	$j(this.$form).validate({
-	    		submitHandler: this.onSubmit
+	    		submitHandler: this.onSubmit,
+	    		errorClass: 'newsletterError'
 	    	});
 	    },
 	    onSubmit: function(){
