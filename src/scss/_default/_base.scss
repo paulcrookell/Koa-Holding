@@ -15,6 +15,11 @@ img {
 	//max-width: 100%;
 }
 
+input {
+	-webkit-appearance: none;
+	@include rounded(0);
+}
+
 .group {
 	zoom: 1;
 	&:before, &:after {

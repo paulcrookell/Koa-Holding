@@ -18,7 +18,8 @@ $coloroverlay = false;
 	    	<div class="slide">
 
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-1.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		
+	    		<div class="grad-overlay"></div>
+	    		<div class="color-overlay"></div>
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -32,7 +33,8 @@ $coloroverlay = false;
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-2.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		
+	    		<div class="grad-overlay"></div>
+	    		<div class="color-overlay"></div>
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -46,7 +48,8 @@ $coloroverlay = false;
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-3.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		
+	    		<div class="grad-overlay"></div>
+	    		<div class="color-overlay"></div>
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -60,7 +63,8 @@ $coloroverlay = false;
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-4.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		
+	    		<div class="grad-overlay"></div>
+	    		<div class="color-overlay"></div>
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -77,7 +81,7 @@ $coloroverlay = false;
 
 	    <a href="carousel-arrows next"></a>
 
-	    <div class="grad-overlay"></div>
+	    
 	    <div class="newsletter">
 	    	<p>WANT TO HELP US TEST?<br/>SIGN UP TO OUR MAILING LIST TO TAKE PART</p>
 		    <form class="form js-newsletter-signup group" action="inc/newsletter.php" method="post">

@@ -36,7 +36,7 @@ h1 {
 	color: #FFF;
 	font-family: 'FuturaCondensed', Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	@include font-size(3.2);
+	@include font-size(2.8);
 	@include breakpoint(lap) {
 		@include font-size(6.2);
 	}
