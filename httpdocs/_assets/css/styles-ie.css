@@ -430,10 +430,7 @@ span.small {
   height: 100%; }
   @media (min-width: 769px) {
     #header {
-      min-height: 760px; } }
-  @media (min-width: 769px) {
-    #header {
-      position: fixed; } }
+      min-height: 640px; } }
   #header.sign-up {
     height: auto;
     min-height: 100%; }
