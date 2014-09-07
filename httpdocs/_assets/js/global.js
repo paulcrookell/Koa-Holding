@@ -4582,6 +4582,7 @@ $.format = function deprecated() {
 	    		var json = $.parseJSON(data);
 	    		console.log(json);
 	    		if(json.result == 'success'){
+	    			$('.newsletter p').text("Thanks! We'll be in touch soon");
 	    			$('.js-newsletter-signup').hide();
 	    			$('.js-newsletter-confirm').show();
 	    		}
@@ -4621,6 +4622,7 @@ $.format = function deprecated() {
 	    		smartSpeed: 1200,
 	    		loop: true,
 	    		nav: false,
+	    		dots: false,
 	    		onChanged: function(){
 	    			console.log(this.currentItem);
 

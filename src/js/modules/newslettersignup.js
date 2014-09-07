@@ -38,6 +38,7 @@
 	    		var json = $.parseJSON(data);
 	    		console.log(json);
 	    		if(json.result == 'success'){
+	    			$('.newsletter p').text("Thanks! We'll be in touch soon");
 	    			$('.js-newsletter-signup').hide();
 	    			$('.js-newsletter-confirm').show();
 	    		}

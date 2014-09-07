@@ -1,19 +1,26 @@
 .newsletter {
-	@include position(absolute, auto, 50%, 50px, auto);
+	@include position(absolute, auto, 50%, 10px, auto);
 	width: 94%;
 	margin-left: -47%;
-	@include breakpoint(lap) {
+	@include breakpoint(portable) {
 		width: 500px;
 		margin-left: -250px;
-
+		@include position(absolute, auto, 50%, 25px, auto);
 	}
 	p {
 		color: $white;
 		text-align: center;
+		@include font-size(1.1);
+		@include breakpoint(portable) {
+			@include font-size(1.6);
+		}
 	}
 	
 	.form {
-		margin: 30px 0 0 0;
+		margin: 5px 0 0 0;
+		@include breakpoint(lap) {
+			margin: 20px 0 0 0;
+		}
 	}
 	
 	.email {
@@ -28,11 +35,28 @@
 		text-align: left;
 		width: 65%;
 		padding-left: 10px;
+		text-transform: lowercase;
 		@include hoverActiveFocus() {
 			background: none;
 			color: #FFF;
 		}
 	}
+	::-webkit-input-placeholder {
+	  	text-transform: uppercase;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   	text-transform: uppercase;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		text-transform: uppercase;
+	}
+
+	:-ms-input-placeholder {  
+	  text-transform: uppercase; 
+	}
+
 	.subscribe-btn {
 		//border-color: rgba(255,255,255,0.8);
 		float: right;
@@ -45,6 +69,7 @@
 	}
 	label {
 		&.newsletterError {
+			@include font-size(1.2);
 			position: absolute;
 			left: 0;
 			bottom: 46px;
@@ -52,6 +77,24 @@
 			width: 100%;
 			text-align: center;
 		}
+	}
+	.js-newsletter-confirm {
+		text-align: center;
+		margin: 5px 0 0 0;
+		@include breakpoint(lap) {
+			margin: 20px 0 0 0;
+		}
+	}
+	.social-icon {
+		border: 2px solid #FFF;
+		color: #FFF;
+		@include font-size(1.8);
+		display: inline-block;
+		width: 45px; height: 45px;
+		line-height: 40px;
+		margin: 0 8px;
+		@include rounded(50%);
+		text-align: center;
 	}
 	
 	

@@ -18,8 +18,7 @@ $coloroverlay = false;
 	    	<div class="slide">
 
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-1.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		<div class="grad-overlay"></div>
-	    		<div class="color-overlay"></div>
+	    		
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -33,8 +32,7 @@ $coloroverlay = false;
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-2.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		<div class="grad-overlay"></div>
-	    		<div class="color-overlay"></div>
+	    		
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -48,8 +46,7 @@ $coloroverlay = false;
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-3.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		<div class="grad-overlay"></div>
-	    		<div class="color-overlay"></div>
+	    		
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -63,8 +60,7 @@ $coloroverlay = false;
 	    	</div>
 	    	<div class="slide">
 	    		<div class="bg <?php echo $bgfilter; ?>" style="background-image:url('_assets/img/background-4.jpg');" <?php /* data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% 15%;"*/ ?>></div>
-	    		<div class="grad-overlay"></div>
-	    		<div class="color-overlay"></div>
+	    		
 	    		<div class="landing-wrap valign">
 	    		    
 	    		    <div class="mid">
@@ -83,21 +79,22 @@ $coloroverlay = false;
 
 	    
 	    <div class="newsletter">
-	    	<p>WANT TO HELP US TEST?<br/>SIGN UP TO OUR MAILING LIST TO TAKE PART</p>
+	    	<p>We're launching soon | Be the first to know.</p>
 		    <form class="form js-newsletter-signup group" action="inc/newsletter.php" method="post">
 		    	
 		    		<input type="email" class="input input-text email" placeholder="EMAIL ADDRESS" id="email" name="email" />
 		    		<input type="submit" class="input btn subscribe-btn" value="Subscribe" name="submit" />
 		    		
 		    </form>
+
 		    <div class="js-newsletter-confirm">
-		    	<br/>
-		    	<p>THANKS FOR SIGNING UP!</p>
+		    	<a class="social-icon koa-icon-facebook" href="#"></a>
+		    	<a class="social-icon koa-icon-twitter" href="#"></a>
+		    	<a class="social-icon koa-icon-instagram" href="#"></a>
 		   	</div>
 	    </div>
 
 	    <a href="/" class="btn header-btn logo">KOA</a>
-	    <span class="btn header-btn soon-btn">LAUNCHING SOON</span>
 
 	</header>
 	

@@ -24,6 +24,7 @@
 	    		smartSpeed: 1200,
 	    		loop: true,
 	    		nav: false,
+	    		dots: false,
 	    		onChanged: function(){
 	    			console.log(this.currentItem);
 
