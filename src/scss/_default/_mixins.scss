@@ -102,6 +102,12 @@
 		@else if $point == portable {
 			@media (min-width: $portableWidth) { @content; }
 		}
+		// 680
+		@else if $point == tabportrait {
+			@media (min-width: $tabletPortraitWidth) { @content; }
+		}
+
+		
 		// 769
 		@else if $point == lap {
 			@media (min-width: $lapWidth) { @content; }

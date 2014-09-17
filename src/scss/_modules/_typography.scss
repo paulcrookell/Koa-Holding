@@ -40,8 +40,8 @@ h1 {
 	@include breakpoint(portable) {
 		@include font-size(3);
 	}
-	@include breakpoint(lap) {
-		@include font-size(7);
+	@include breakpoint(tabportrait) {
+		@include font-size(6);
 	}
 	@include breakpoint(lap) {
 		@include font-size(7);
@@ -55,6 +55,9 @@ h2 {
 		@include font-size(1.8);
 		width: 580px;
 		margin: 0 auto;
+	}
+	@include breakpoint(tabportrait) {
+		@include font-size(1.6);
 	}
 	@include breakpoint(lap) {
 		@include font-size(1.8);

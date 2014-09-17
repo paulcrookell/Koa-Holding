@@ -3,7 +3,7 @@
 	width: 80%;
 	margin-left: -40%;
 	text-align: center;
-	@include breakpoint(lap) {
+	@include breakpoint(tabportrait) {
 		width: 340px;
 		margin-left: -170px;
 		@include position(absolute, auto, 50%, 50px, auto);
@@ -12,7 +12,7 @@
 		color: $white;
 		text-align: center;
 		@include font-size(1.1);
-		@include breakpoint(portable) {
+		@include breakpoint(tabportrait) {
 			@include font-size(1.6);
 		}
 	}
