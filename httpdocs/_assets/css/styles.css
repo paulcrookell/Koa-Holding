@@ -121,6 +121,10 @@ h1 {
   font-size: 2.8rem; }
   @media (min-width: 480px) {
     h1 {
+      font-size: 30px;
+      font-size: 3rem; } }
+  @media (min-width: 769px) {
+    h1 {
       font-size: 70px;
       font-size: 7rem; } }
   @media (min-width: 769px) {
@@ -132,7 +136,7 @@ h2 {
   color: #FFF;
   font-size: 11px;
   font-size: 1.1rem; }
-  @media (min-width: 480px) {
+  @media (min-width: 769px) {
     h2 {
       font-size: 18px;
       font-size: 1.8rem;
@@ -198,7 +202,7 @@ span.small {
 
 .btn, .newsletter .email {
   background: transparent;
-  border: 2px solid #FFF;
+  border: none;
   color: #FFF;
   cursor: pointer;
   display: inline-block;
@@ -206,18 +210,50 @@ span.small {
   font-size: 14px;
   font-size: 1.4rem;
   height: 45px;
-  line-height: 40px;
+  line-height: 45px;
   text-transform: uppercase;
   text-align: center;
+  padding: 0;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease; }
-  .btn:hover, .newsletter .email:hover, .btn:active, .newsletter .email:active, .btn:focus, .newsletter .email:focus {
-    background: #FFF;
-    background: white;
-    color: #000; }
   .btn.sign-up, .newsletter .sign-up.email {
     margin: 20px 0 0 0;
     width: 250px; }
+  .btn.progress-btn .arrow, .btn.progress-btn .newsletter .progress-btn.email, .newsletter .btn.progress-btn .progress-btn.email {
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    bottom: auto;
+    left: auto;
+    width: 24px;
+    height: 24px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+    .btn.progress-btn .arrow span, .btn.progress-btn .arrow .newsletter .progress-btn.email, .newsletter .btn.progress-btn .arrow .progress-btn.email {
+      position: absolute;
+      top: 6px;
+      right: auto;
+      bottom: auto;
+      left: 8px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 7px solid #FFF; }
+  .btn.progress-btn:hover .arrow, .btn.progress-btn:hover .newsletter .progress-btn.email:hover, .newsletter .btn.progress-btn:hover .progress-btn.email:hover, .btn.progress-btn:active .arrow, .btn.progress-btn:active .newsletter .progress-btn.email:active, .newsletter .btn.progress-btn:active .progress-btn.email:active, .btn.progress-btn:focus .arrow, .btn.progress-btn:focus .newsletter .progress-btn.email:focus, .newsletter .btn.progress-btn:focus .progress-btn.email:focus {
+    background: #FFF;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9); }
+    .btn.progress-btn:hover .arrow span, .btn.progress-btn:hover .arrow .newsletter .progress-btn.email:hover, .newsletter .btn.progress-btn:hover .arrow .progress-btn.email:hover, .btn.progress-btn:active .arrow span, .btn.progress-btn:active .arrow .newsletter .progress-btn.email:active, .newsletter .btn.progress-btn:active .arrow .progress-btn.email:active, .btn.progress-btn:focus .arrow span, .btn.progress-btn:focus .arrow .newsletter .progress-btn.email:focus, .newsletter .btn.progress-btn:focus .arrow .progress-btn.email:focus {
+      border-left: 7px solid #000; }
   .btn.header-btn, .newsletter .header-btn.email {
     border: none;
     height: auto;
@@ -499,9 +535,7 @@ span.small {
     right: 0px;
     bottom: 120px;
     left: 0px; }
-    @media (min-width: 480px) {
-      #header .landing-wrap {
-        padding: 60px 30px; } }
+    @media (min-width: 480px) { }
     @media (min-width: 769px) {
       #header .landing-wrap {
         position: absolute;
@@ -880,18 +914,19 @@ span.small {
   position: absolute;
   top: auto;
   right: auto;
-  bottom: 10px;
+  bottom: 50px;
   left: 50%;
-  width: 94%;
-  margin-left: -47%; }
-  @media (min-width: 480px) {
+  width: 80%;
+  margin-left: -40%;
+  text-align: center; }
+  @media (min-width: 769px) {
     .newsletter {
-      width: 500px;
-      margin-left: -250px;
+      width: 340px;
+      margin-left: -170px;
       position: absolute;
       top: auto;
       right: auto;
-      bottom: 25px;
+      bottom: 50px;
       left: 50%; } }
   .newsletter p {
     color: #FFF;
@@ -908,15 +943,14 @@ span.small {
       .newsletter .form {
         margin: 20px 0 0 0; } }
   .newsletter .email {
-    border-right: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
     color: #FFF;
     cursor: text;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0);
-    float: left;
     outline: none;
     text-align: left;
-    width: 65%;
-    padding-left: 10px;
     text-transform: lowercase; }
     .newsletter .email:hover, .newsletter .email:active, .newsletter .email:focus {
       background: none;
@@ -932,9 +966,18 @@ span.small {
   .newsletter :-ms-input-placeholder {
     text-transform: uppercase; }
   .newsletter .subscribe-btn {
-    float: right;
-    line-height: 37px;
-    width: 35%; }
+    position: absolute;
+    top: auto;
+    right: 30px;
+    bottom: -45px;
+    left: auto; }
+    @media (min-width: 769px) {
+      .newsletter .subscribe-btn {
+        position: absolute;
+        top: auto;
+        right: 0;
+        bottom: -45px;
+        left: auto; } }
   .newsletter label.newsletterError {
     font-size: 12px;
     font-size: 1.2rem;

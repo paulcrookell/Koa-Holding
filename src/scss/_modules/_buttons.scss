@@ -1,21 +1,22 @@
 .btn {
 	background: transparent;
-	border: 2px solid $white;
+	border: none;
 	color: #FFF;
 	cursor: pointer;
 	display: inline-block;
 	font-family: "CenturyGothicStd", sans-serif;
 	@include font-size(1.4);
 	height: 45px;
-	line-height: 40px;
+	line-height: 45px;
 	text-transform: uppercase;
 	text-align: center;
+	padding:0;
 	@include transition(all, 200ms, ease);
 	
 	@include hoverActiveFocus() {
-		background: $white;
-		background: rgba(255,255,255,1);
-		color: #000;
+		//background: $white;
+		//background: rgba(255,255,255,1);
+		//color: #000;
 	}
 	
 	&.sign-up {
@@ -23,7 +24,34 @@
 		width: 250px;
 	}
 
+	&.progress-btn {
+		.arrow {
+			@include rounded(50%);
+			border: 1px solid $white;
+			@include position(absolute, 10px, auto, auto, -30px);
+			width: 24px; height: 24px;
+			@include transform(scale(1));
+			@include transition(all, 200ms, ease);
+			span {
+				@include position(absolute, 6px, 8px, auto, auto);
+				width: 0; 
+				height: 0;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				border-left: 7px solid $white;
+			}
+		}
+		@include hoverActiveFocus() {
+			.arrow {
+				background: $white;
+				@include transform(scale(0.9));
+				span {
+					border-left: 7px solid $black;
 
+				}
+			}
+		}
+	}
 
 	&.header-btn {
 		border: none;
@@ -112,6 +140,7 @@
 				}
 			}
 		}
+
 		&.more {
 			bottom: $headerOffsetsVertical;
 			left: $headerOffsetsHorizonatal;

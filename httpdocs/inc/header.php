@@ -6,8 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?php echo $pagetitle; ?></title>
-        <meta name="description" content="">
+        <title>Koa | Find Adventure. Visit Often.</title>
+        <meta name="description" content="YOUR ONLINE ADVENTURE PLATFORM | Launching soon...">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
 

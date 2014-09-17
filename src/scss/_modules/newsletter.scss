@@ -1,11 +1,12 @@
 .newsletter {
-	@include position(absolute, auto, 50%, 10px, auto);
-	width: 94%;
-	margin-left: -47%;
-	@include breakpoint(portable) {
-		width: 500px;
-		margin-left: -250px;
-		@include position(absolute, auto, 50%, 25px, auto);
+	@include position(absolute, auto, 50%, 50px, auto);
+	width: 80%;
+	margin-left: -40%;
+	text-align: center;
+	@include breakpoint(lap) {
+		width: 340px;
+		margin-left: -170px;
+		@include position(absolute, auto, 50%, 50px, auto);
 	}
 	p {
 		color: $white;
@@ -25,16 +26,16 @@
 	
 	.email {
 		@extend .btn;
-		//border: none;
-		border-right: none;
+		border: none;
+		border-bottom: 1px solid $white;
 		color: #FFF;
 		cursor: text;
+		width: 100%;
 		background-color: rgba(255,255,255,0);
-		float: left;
+		
 		outline: none; 
 		text-align: left;
-		width: 65%;
-		padding-left: 10px;
+
 		text-transform: lowercase;
 		@include hoverActiveFocus() {
 			background: none;
@@ -59,9 +60,15 @@
 
 	.subscribe-btn {
 		//border-color: rgba(255,255,255,0.8);
-		float: right;
-		line-height: 37px;
-		width: 35%;
+		//float: right;
+		//line-height: 37px;
+		//width: 35%;
+		@include position(absolute, auto, auto, -45px, 30px);
+		@include breakpoint(lap) {
+			@include position(absolute, auto, auto, -45px, 0);
+		}
+		
+		
 		&:hover {
 
 			//background: rgba(255,255,255,1);

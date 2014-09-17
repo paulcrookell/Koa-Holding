@@ -38,6 +38,9 @@ h1 {
 	font-weight: 400;
 	@include font-size(2.8);
 	@include breakpoint(portable) {
+		@include font-size(3);
+	}
+	@include breakpoint(lap) {
 		@include font-size(7);
 	}
 	@include breakpoint(lap) {
@@ -48,7 +51,7 @@ h1 {
 h2 {
 	color: #FFF;
 	@include font-size(1.1);
-	@include breakpoint(portable) {
+	@include breakpoint(lap) {
 		@include font-size(1.8);
 		width: 580px;
 		margin: 0 auto;

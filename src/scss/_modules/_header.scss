@@ -46,7 +46,7 @@
 		padding: 60px 15px;
 		@include position(absolute, 0px, 0px, 120px, 0px);
 		@include breakpoint(portable) {
-			padding: 60px 30px;
+			//padding: 60px 30px;
 		}
 		@include breakpoint(lap) {
 			@include position(absolute, 0px, 0px, 0px, 0px);

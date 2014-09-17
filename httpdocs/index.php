@@ -79,18 +79,20 @@ $coloroverlay = false;
 
 	    
 	    <div class="newsletter">
-	    	<p>We're launching soon | Be the first to know.</p>
+	    	<p>We're <strong>launching soon</strong>. Be the first to know.</p>
 		    <form class="form js-newsletter-signup group" action="inc/newsletter.php" method="post">
 		    	
 		    		<input type="email" class="input input-text email" placeholder="EMAIL ADDRESS" id="email" name="email" />
-		    		<input type="submit" class="input btn subscribe-btn" value="Subscribe" name="submit" />
+		    		<button type="submit" class="input btn progress-btn subscribe-btn" name="submit">
+		    			Subscribe<div class="arrow"><span></span></div>
+		    		</button>
 		    		
 		    </form>
 
 		    <div class="js-newsletter-confirm">
-		    	<a class="social-icon koa-icon-facebook" href="#"></a>
-		    	<a class="social-icon koa-icon-twitter" href="#"></a>
-		    	<a class="social-icon koa-icon-instagram" href="#"></a>
+		    	<a class="social-icon koa-icon-facebook" href="http://facebook.com/teamkoa" target="_blank"></a>
+		    	<a class="social-icon koa-icon-twitter" href="http://twitter.com/team_koa" target="_blank"></a>
+		    	<a class="social-icon koa-icon-instagram" href="http://instagram.com/teamkoa" target="_blank"></a>
 		   	</div>
 	    </div>
 
