@@ -3,7 +3,6 @@ date_default_timezone_set('Europe/London');
 require('mailchimp/MailChimp.php');
 
 if ( isset($_POST['submitted']) ) {
-
 	// Array to handle error messages.
 	$errors = array();
 	// Array to handle user input.

@@ -4624,8 +4624,7 @@ $.format = function deprecated() {
 	    		nav: false,
 	    		dots: false,
 	    		onChanged: function(){
-	    			console.log(this.currentItem);
-
+	    			//console.log(this.currentItem);
 	    		},
 	    		afterInit : function(el){
 	    			//el.trigger('owl.jumpTo', closestEvent);
@@ -4653,7 +4652,6 @@ $.format = function deprecated() {
 
 	    	$j(this.$carousel).on( 'translated.owl.carousel', $j.proxy(function(event) {
 	    		$j(event.target).addClass("translated");
-	    		console.log(event.item.index);
 	    		$j('.owl-item:nth-of-type('+(event.item.index+1)+')').addClass('translated');
 	    	}, this));
 	    	
